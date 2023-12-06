@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name= "LoginForm" method="post" action = "servlet1" >
+    <label for="fname">Firstname:</label>
+    <input type="text" id="fname" name="fname" placeholder="Firstname">
+    <label for="lname">Lastname:</label>
+    <input type="text" id="lname" name="lname" placeholder="Lastname"><br><br>
+
+    <label for="courses">Select a Course:</label>
+    <select id="courses" name="courses">
+        <option value="Course">Course</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Data engineering">Data engineering</option>
+        <option value="Bioinformatics">Bioinformatics</option>
+        <option value="Network and Security">Network and Security</option>
+        <option value="Graphics and Multimedia">Graphics and Multimedia</option>
+    </select><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label>Language:</label><br>
+    <input type="checkbox" id="English" name="language[]" value="English">
+    <label for="English">English</label><br>
+
+    <input type="checkbox" id="Malay" name="language[]" value="Malay">
+    <label for="Malay">Malay</label><br>
+
+    <input type="checkbox" id="Mandarin" name="language[]" value="Mandarin">
+    <label for="Mandarin">Mandarin</label><br><br>
+
+    <label for="trans">Transportation:</label><br>
+    <select id="trans" name="trans" multiple size="5">
+        <option value="Bus">Bus</option>
+        <option value="Car">Car</option>
+        <option value="Motorcycle">Motorcycle</option>
+        <option value="Bicycle">Bicycle</option>
+        <option value="Walking">Walking</option>
+    </select><br><br>
+
+    <label for="phoneNum">Phone:</label>
+    <input type="text" id="phoneNum" name="phoneNum" placeholder="Phone no."><br><br>
+
+    <label for="address">Current address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter Email"><br><br>
+
+    <input type="submit" value="Register">
+
+</form> 
+
+</body>
+</html>
